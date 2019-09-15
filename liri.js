@@ -1,94 +1,3 @@
-# liri-node-app
-Liri acts as a command prompt version of 'Siri' or 'Google'. It pulls requests from 3 different api's through the command prompt to find information on artists tours, songs, and movies. 
-
-Problem being Solved:
-The ability to quickly search information on band tours, spotify songs, & movies
-
-App Orginzation:
-The app is organized through a main file called liri.js which then feeds from installed packages and a handful of other files to run functionality
-
-Deployed version can be found here: https://github.com/mhandler1991/liri-node-app
-
-Developed soely by M Handler
-
-### Integrations Used
-
-1. Spotify API
-2. Bands In Town API
-3. OMDB API
-
-### Packages Used
-
-1. [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
-2. [Axios](https://www.npmjs.com/package/axios)
-3. [OMDB API](http://www.omdbapi.com) 
-4. [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
-5. [Moment](https://www.npmjs.com/package/moment)
-6. [DotEnv](https://www.npmjs.com/package/dotenv)
-
-# Images / Examples
-
-### Concert This
-1. The first input will be 'concert-this'
-2. The second input will be *the band you want to search* 
-
-![Bands In Town Request](/images/ct-request.png)
-
-1. The following infomation will return:
-    - Venue Name
-    - Venue Location
-    - Venue Dates
-
-![Bands in Town Response](/images/ct-response.png)
-*Response is then logged
-
-### Spotify This
-1. The first input will be 'spotify-this-song'
-2. The second input will be *the song you want to search* 
-
-![Bands In Town Request](/images/spotify-request.png)
-
-1. The following infomation will return:
-    - Artist
-    - Term
-    - Link
-    - Album
-
-![Bands in Town Response](/images/spotify-response.png)
-*Response is then logged
-
-### Movie This
-1. The first input will be 'movie-this'
-2. The second input will be *the movie you want to search* 
-
-![Bands In Town Request](/images/m-request.png)
-
-1. The following infomation will return:
-    - Title
-    - Year
-    - Rating
-    - Rotten Tomatoes Rating
-    - Country of Production
-    - Language
-    - Plot
-    - Actors
-
-![Bands in Town Response](/images/m-response.png)
-*Response is then logged
-
-### Random This
-1. The  input will be 'do-what-it-says'
-
-![Bands In Town Request](/images/says-request.png)
-
-This will pull a defined command and term from a text file and run the according functionality
-
-![Bands in Town Response](/images/says-response.png)
-*Response is then logged
-
-### Code
-
-````
 // Requirements
 
 require('dotenv').config();
@@ -157,7 +66,7 @@ if (command === "concert-this") {
 
 // Bands in Town Functionality
 function concertthis() {
-    var search = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=********";
+    var search = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=codingbootcamp";
 
     axios.get(search).then(
         function (response) {
@@ -177,8 +86,7 @@ function concertthis() {
             console.log("");
 
             // Log onto a Txt.file
-            fs.appendFile("log.txt", "\nConcert Request:" + log.Venue_Name + "," 
-            + log.Venue_Location + "," + log.Venue_Date + "  ", function (err) {
+            fs.appendFile("log.txt", "\nConcert Request:" + log.Venue_Name + "," + log.Venue_Location + "," + log.Venue_Date + "  ", function (err) {
                 if (err) throw err;
                 console.log("Log Created");
                 console.log("**********");
@@ -214,8 +122,7 @@ function trackthis(term) {
 
 
         // Log onto a Txt.file
-        fs.appendFile("log.txt", "\nSpotify Request:" + log.Artist + "," 
-        + log.Term + "," + log.Link + "," + log.Album + "  ", function (err) {
+        fs.appendFile("log.txt", "\nSpotify Request:" + log.Artist + "," + log.Term + "," + log.Link + "," + log.Album + "  ", function (err) {
             if (err) throw err;
             console.log("Log Created");
             console.log("**********");
@@ -228,7 +135,7 @@ function trackthis(term) {
 function moviethis() {
 
     // Variables
-    var api = "********";
+    var api = "trilogy";
     var url = "http://www.omdbapi.com/?apikey=" + api + "&t=" + term
 
     axios.get(url).then(function (response) {
@@ -263,10 +170,7 @@ function moviethis() {
         console.log("");
 
         // Log onto a Txt.file
-        fs.appendFile("log.txt", "\nOMDB Request:" + log.Title + "," 
-        + log.Year + "," + log.Rating + "," + log.Rotten_Tomates_Rating + "," 
-        + log.Country_Production + "," + log.Language + "," + log.Plot + "," + log.Actors + "  ", 
-        function (err) {
+        fs.appendFile("log.txt", "\nOMDB Request:" + log.Title + "," + log.Year + "," + log.Rating + "," + log.Rotten_Tomates_Rating + "," + log.Country_Production + "," + log.Language + "," + log.Plot + "," + log.Actors + "  ", function (err) {
             if (err) throw err;
             console.log("Log Created");
             console.log("**********");
@@ -326,4 +230,3 @@ function dothis() {
 
     })
 }
-````

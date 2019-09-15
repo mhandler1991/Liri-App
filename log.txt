@@ -1,0 +1,17 @@
+
+Spotify Request:Calvin Harris,kiss,https://api.spotify.com/v1/albums/7GEzhoTiqcPYkOprWQu581,One Kiss (with Dua Lipa)  
+Spotify Request:Backstreet Boys,"I Want it That Way",https://api.spotify.com/v1/albums/1NslKOZobWxINFaFkLol3r,The Hits--Chapter One  
+Spotify Request:Backstreet Boys,"I Want it That Way",https://api.spotify.com/v1/albums/1NslKOZobWxINFaFkLol3r,The Hits--Chapter One  
+Spotify Request:Backstreet Boys,"I Want it That Way",https://api.spotify.com/v1/albums/1NslKOZobWxINFaFkLol3r,The Hits--Chapter One  
+Spotify Request:Backstreet Boys,"I Want it That Way",https://api.spotify.com/v1/albums/1NslKOZobWxINFaFkLol3r,The Hits--Chapter One  
+Concert Request:End Of The Road World Tour - Indianapolis, IN,Indianapolis IN,2019-08-31T19:30:00  
+Spotify Request:Lizzo,love,https://api.spotify.com/v1/albums/74gSdSHe71q7urGWMMn3qB,Cuz I Love You (Deluxe)  
+IMDB Request:The Matrix,1999,8.7,88%,USA,English,A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.,Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving  
+Spotify Request:Backstreet Boys,I Want it That Way,https://api.spotify.com/v1/albums/1NslKOZobWxINFaFkLol3r,The Hits--Chapter One  
+Concert Request:End Of The Road World Tour - Indianapolis, IN,Indianapolis IN,2019-08-31T19:30:00  
+Concert Request:End Of The Road World Tour - Indianapolis, IN,Indianapolis IN,Aug 31st 19  
+Concert Request:End Of The Road World Tour - Indianapolis, IN,Indianapolis IN,Aug 31st 19  
+Spotify Request:Various Artists,hello,https://api.spotify.com/v1/albums/2JZW5M6Cn31BOhx6lNP259,Los reyes del Flow  
+OMDB Request:The Matrix,1999,8.7,88%,USA,English,A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.,Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving  
+Spotify Request:Backstreet Boys,I Want it That Way,https://api.spotify.com/v1/albums/1NslKOZobWxINFaFkLol3r,The Hits--Chapter One  
+Concert Request:End Of The Road World Tour - Salt Lake City, UT,Salt Lake City UT,Sep 14th 19  
